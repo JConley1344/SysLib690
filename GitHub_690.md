@@ -16,11 +16,19 @@ I believe that as this class goes on I will learn what I need to be proficient.
 
 One of my favorite Disney movie quotes is:
 ```
-*Sometimes the right path is not the easiest one*.
+Sometimes the right path is not the easiest one.
 ```
+Something that I noticed when practicing is that if you put it in a blockcode you cannont make it bold or italic.
+This is good information for me to remember.
+
+## Weekly Modivational Quote
+
 This sticks out at to me a lot this semester, because I have second guessed my class choices. 
 This will be one of the biggest learning semesters I have had. Everything I am taking it outside my wheelhouse.
 I must continue to focus , **Challenge Accepted**.
+
+:happy:
+Jessica
 
 
 
