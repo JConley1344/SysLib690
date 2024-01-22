@@ -26,9 +26,11 @@ this is really intering
 I am using my husband's websdiet to practice adding links
 [NickConley.com](http://nickconley.com)
 
-##This is a second heading
+## This is a second heading
 
 To Be or Not To Be...
+
+had to make additonal edits because I forgot 1 single space
 
 
 
