@@ -27,7 +27,7 @@ This sticks out at to me a lot this semester, because I have second guessed my c
 This will be one of the biggest learning semesters I have had. Everything I am taking it outside my wheelhouse.
 I must continue to focus , **Challenge Accepted**.
 
-:happy:
+😹
 Jessica
 
 
