@@ -16,11 +16,12 @@ Unordered list:
 -item two
 -item three
 
-Practicing coding. 'nope'  I do not know codes so I just put a word in to see if it worked.
+Practicing coding. 'ls'  I do not know codes so I just put a word in to see if it worked.
 
 '''
-code blocking
-this is really intering
+for i in*; do
+echo"$i"
+done
 '''
 
 I am using my husband's websdiet to practice adding links
