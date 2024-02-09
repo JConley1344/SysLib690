@@ -24,7 +24,7 @@ Got very comfortable using CLI codes to navigate around. Then copied exact codin
 to this post to make it look like
 
 ...
-{list files and directories.................. ls
+list files and directories.................. ls
 print name of current/working directory..... pwd
 create a new directory...................... mkdir
 remove or delete an empty directory......... rmdir
@@ -34,5 +34,5 @@ print characters to output.................. echo
 display contents of a text file............. cat
 copy a file or directory.................... cp
 move or rename a file or directory.......... mv
-remove or delete a file or directory........ rm}
+remove or delete a file or directory........ rm
 ...
