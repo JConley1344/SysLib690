@@ -22,8 +22,7 @@ comfort zone.
 I went ahead and conducted updates using the code 'sudo apt update'. 
 Got very comfortable using CLI codes to navigate around. 
 
-...
-list files and directories.................. ls
+<pre><code>list files and directories.................. ls
 print name of current/working directory..... pwd
 create a new directory...................... mkdir
 remove or delete an empty directory......... rmdir
@@ -34,4 +33,4 @@ display contents of a text file............. cat
 copy a file or directory.................... cp
 move or rename a file or directory.......... mv
 remove or delete a file or directory........ rm
-...
+</code></pre>
