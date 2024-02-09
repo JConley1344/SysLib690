@@ -26,7 +26,7 @@ directory as requested for the assigment.
 ### Extras Explored Week 5
 I went ahead and conducted updates using the code 'sudo apt update'. 
 Got very comfortable using CLI codes to navigate around. Then copied exact coding from the book 
-to this post becuase it wasn't looking correctly. Then remember it was not . but ` to make the
+to this post becuase it wasn't looking correctly. Then remember it was not ' but ` to make the
 text in a block throughout the post. It very much looks the same to me, but I realized my mistake
 and fixed it after continuing to look from a solution. 
 
