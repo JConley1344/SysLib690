@@ -268,7 +268,7 @@ Lastly I ran the code *after a few typos*
 
 ### Review
 I continue to struggle with flashcards. I just struggle with confience in the moment with this class. I am learning a lot and really taking the time throughout the week to practice with the intent of learning everything we do.
-I fell very confidenet on learn-the-cli and learn-thefilesystem. 
+I feel very confident on learn-the-cli and learn-thefilesystem. 
 
 
 
