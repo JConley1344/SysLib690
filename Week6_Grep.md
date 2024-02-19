@@ -1,4 +1,5 @@
 # Week 6-Grep Searching
+
 ## **Reproducing the Examples**
 
 For this weeks work I started in the UK database Scopus. I first started by recreating what 
@@ -7,41 +8,68 @@ along with the weekly video to work through kystrokes and understanding. I felt 
 to try pulling different data and seeing if I could understand the results.
 
 ## **New Data**
+
 *Searching using the term "social emotional learning"*
 This search yelded **1506** results. I took the first two pages of results to download, which was *20*
 total titles.
 
 ## Uploading the File
+
 I opened the terminal. I connected to the terminal, and connected via gcloud command. I then created a file
 named `scopus.bib`. I then started to explore the `grep` codes with this file. 
 **I was able to open a SSH-in-browser window and just select **upload file** without issues, it opened undermy normal gcloud name.*
 
-Using the `grep -Eio "^@(A|B)[A-Z]*" scopus.bib | sort | uniq -c` 
+Using the
+
+```
+grep -Eio "^@(A|B)[A-Z]*" scopus.bib | sort | uniq -c
+```
+
 I was able to see that of the *20* files 19 were articles and 1 was a book.
-     `19 @ARTICLE
-      1 @BOOK`
+
+```
+19 @ARTICLE
+1 @BOOK
+```
 
 I then wanted to look at citations because I noted everything I had pulled was published in 2024. I Found that interesteing. Using 
-` grep -o "Cited by: [0-9]*" scopus.bib | \
-    awk -F":" \
-    'BEGIN { printf "Total Citations: "} \
-    { sum += $2; } \
-    END { print sum }'`
+
+```
+grep -o "Cited by: [0-9]*" scopus.bib | \
+awk -F":" \
+'BEGIN { printf "Total Citations: "} \
+{ sum += $2; } \
+END { print sum }'
+```
+
 I was able to see that there was a total of 6 citations. Which is more than I thought they might have due to the dates. 
 
 Also I sorted the journal titles out using
-`grep "journal =" scopus.bib | cut -d"=" -f2 | \
+
+```
+grep "journal =" scopus.bib | cut -d"=" -f2 | \
     sed 's/ {//' | sed 's/},//' | \
-    sort | uniq -c | sort`
+    sort | uniq -c | sort
+```
+
 and found that there were 20 different journal/book titles, not one that might have more infomraiton regularly on the topic. 
 
 ## Playing with More Data
+
 I went ahead and searched in scopus "social emotional learning" from just 2023. It resultsed in 300 doucments. I uploaded the file title scopus1.bib to gcloud
 and went off to explore. 
 
-I first ran the code `grep -Eio "@(A|B)[A-Z]*" scopus1.bib | sort | uniq -c` to breakdown the sources of the documents. The results were 249 articles, 39 books, 
+I first ran the code
+
+```
+grep -Eio "@(A|B)[A-Z]*" scopus1.bib | sort | uniq -c
+```
+
+to breakdown the sources of the documents. The results were 249 articles, 39 books, 
 and a bunch of different sources. 
-`   249 @ARTICLE
+
+```
+    249 @ARTICLE
      39 @BOOK
       2 @achva
       1 @act
@@ -58,22 +86,32 @@ and a bunch of different sources.
       2 @bsu
       1 @bu
       3 @buffalo
-      1 @byu`
+      1 @byu
+```
 
 Then I decided to run the code
-`grep -o "Cited by: [0-9]*" scopus1.bib | \
-> awk -F":" \
-> 'BEGIN {printf "Total Citations: "} \
-> { sum += $2; } \
-> END { print sum }'`
-> and found that only 274 total citations had come from these articles. I wondered if this was common.
->
-Lastly I ran the code *after a few typos*
-`grep "journal =" scopus1.bib | cut -d"=" -f2 | sed s'/ {//' | sed 's/}, //' | \
-> sort | uniq -c | sort`.
-> I was able to put together a list of the journal titles. 
 
-     `1 2nd International Conference on Sustainable Computing and Data Communication Systems, ICSCDS 2023 - Proceedings},
+```
+grep -o "Cited by: [0-9]*" scopus1.bib | \
+awk -F":" \
+'BEGIN {printf "Total Citations: "} \
+{ sum += $2; } \
+END { print sum }'
+```
+
+and found that only 274 total citations had come from these articles. I wondered if this was common.
+
+Lastly I ran the code *after a few typos*
+
+```
+grep "journal =" scopus1.bib | cut -d"=" -f2 | sed s'/ {//' | sed 's/}, //' | \
+sort | uniq -c | sort
+```
+
+I was able to put together a list of the journal titles. 
+
+```
+      1 2nd International Conference on Sustainable Computing and Data Communication Systems, ICSCDS 2023 - Proceedings},
       1 31st International Conference on Computers in Education, ICCE 2023 - Proceedings},
       1 ACM Transactions on Human-Robot Interaction},
       1 AERA Open},
@@ -264,11 +302,10 @@ Lastly I ran the code *after a few typos*
      10 Early Childhood Education Journal},
      11 Frontiers in Education},
      13 Exploring Social Emotional Learning in Diverse Academic Settings},
-     14 Frontiers in Psychology}`
+     14 Frontiers in Psychology}
+```
 
 ### Review
+
 I continue to struggle with flashcards. I just struggle with confience in the moment with this class. I am learning a lot and really taking the time throughout the week to practice with the intent of learning everything we do.
 I feel very confident on learn-the-cli and learn-thefilesystem. 
-
-
-
