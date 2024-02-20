@@ -1,4 +1,4 @@
-#Week 7
+# Week 7
 ## 3.4 Managing Software
 
 This week I explored the `sudo` function. 
