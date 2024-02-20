@@ -61,7 +61,7 @@ I went ahead and used the example search queries to confirm that I could reprodu
 
 I searched using `f @attr 1=1 "burns, sean"` and came back with 19 results. But I noticed as I reviewed the records one by one that the words *burns* and *sean* were present in the MARC record, but not always together. 
 
-I also searched ` f @attr 1=4 "social emotional"` and returned with 1 record. Which was interesting. It also did not have the term 8social emotional8 in the title, but the record was about this topic. 
+I also searched ` f @attr 1=4 "social emotional"` and returned with 1 record. Which was interesting. It also did not have the term *social emotional* in the title, but the record was about this topic. 
 
 I also cannot help but wonder if I would have enjoyed using this function in 601 and 602. Because this was a very fun way to explore the catalog. 
 
