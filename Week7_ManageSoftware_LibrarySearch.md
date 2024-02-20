@@ -37,3 +37,8 @@ Then installed tldr using command `sudo apt install tldr`. I installed the `tldr
 
 I first used the search feature, `apt search bsdgames`. Then I installed the games, `sudo apt install bsdgames`. 
 I had issues with connections with my VM today. I am not sure what the cause was. 
+
+Once the connection issues seemed to stop I came back in and practiced Managing Systems again. I started with `sudo mkdir data' and made a directory titled data. I then used `sudo rmdir data` and removed it. I then put it back again. 
+
+I went through all the snytax and commands to uninstall and then reinstalled tldr, for ***practice***. 
+Used `sudo apt --purge remove tldr`, `sudo apt autoremove`, and `sudo apt clean`, before using `sudo apt install tldr` again. 
