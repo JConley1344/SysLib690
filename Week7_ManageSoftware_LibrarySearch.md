@@ -42,3 +42,28 @@ Once the connection issues seemed to stop I came back in and practiced Managing 
 
 I went through all the snytax and commands to uninstall and then reinstalled tldr, for ***practice***. 
 Used `sudo apt --purge remove tldr`, `sudo apt autoremove`, and `sudo apt clean`, before using `sudo apt install tldr` again. 
+
+## Library Search
+Exploring Z93.50 protocol. Used `apt seach yaz` to find: 
+
+```
+yaz/jammy 5.31.1-1build1 amd64
+  Z39.50/SRW/SRU toolkit (utilities)
+```
+
+Used `sudo apt install yaz` for instalation. 
+
+I went ahead and used the exmaple search queries to confirm that I could reporduce the same results. 
+- find @and @attr 1=4 "information" @attr 1=21 "library science" resulting in ***662** results.*
+- f @and @attr 1=21 "library science" @attr 1=21 "philosophy" resulting in ***58** results.*
+- f @attr 1=1 "mcmurtry, larry" resulting in ***60** results.**
+- f @attr 1=1016 "c programming language" resulting in ***1636** results.*
+
+I searched using `f @attr 1=1 "burns, sean"` and came back with 19 results. But I noticed as I reviewed the records one-by-one that the words *burns* and *sean* were present in the MARC record, but not always together. 
+
+I also searched ` f @attr 1=4 "social emotional"` and returned with 1 record. Which was interesting. It also did not have the term 8social emotional8 in the title, but the record was about this topic. 
+
+I also cannot help but wonder if I would have enjoyed using this funtion in 601 and 602. Because this was a very fun way to explore the catalog. 
+
+
+
