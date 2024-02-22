@@ -33,7 +33,7 @@ tldr-py/jammy 0.7.0-4 all
 ```
 
 Then I entered `apt show tldr` like in the video. 
-Then installed tldr using the command `sudo apt install tldr`. I installed the `tldr`. I went ahead and installed games too just for the practice learning.
+Then installed tldr using the command `sudo apt install tldr`. I installed the `tldr`. I went ahead and installed games too just for the practice of intalling.
 
 I first used the search feature, `apt search bsdgames`. Then I installed the games, `sudo apt install bsdgames`. 
 I had issues with connections with my VM today. I am not sure what the cause was. 
@@ -51,7 +51,7 @@ yaz/jammy 5.31.1-1build1 amd64
   Z39.50/SRW/SRU toolkit (utilities)
 ```
 
-Used `sudo apt install yaz` for instalation. 
+Used `sudo apt install yaz` for installation. 
 
 I went ahead and used the example search queries to confirm that I could reproduce the same results. 
 - find @and @attr 1=4 "information" @attr 1=21 "library science" resulting in ***662** results.*
@@ -65,5 +65,9 @@ I also searched ` f @attr 1=4 "social emotional"` and returned with 1 record. Wh
 
 I also cannot help but wonder if I would have enjoyed using this function in 601 and 602. Because this was a very fun way to explore the catalog. 
 
+### Command Line, Filesystem, & Flashcards -OH MY!
+I continue to be humbled with the flashcards. Each week I get a couple more corrections from learning about the topic in class or just remembering the answers from past attempts. I feel very confident with the command line. I still need to stop and think a lot with the filesystems.
 
+### Sidenote
+After listening to me talk about this class and what I am learning my husband has asked a friend of his who runs a computer store and repair for a device to run Linux on. So, in the next week or so I will be attempting to put what I have used into setting up a machine. Which I am excited about. 
 
