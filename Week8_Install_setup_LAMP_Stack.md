@@ -44,5 +44,25 @@ I created this site using the Apache2 HTTP server.</p>
 
 
 ## PHP
+Installation of `sudo apt install php libapache2-mod-php` went as planned. I remembered to `restart` and check apache2's `status` after install. 
+
+Next I created info.php file. I placed succesfully information about PHP in this file. 
+
+![INFO PHP](https://github.com/JConley1344/SysLib690/assets/157387139/c1dc37bf-90ae-4940-9338-852800c6e4ff)
+
+Next was updating the configuration. Using the codes I was able to change the Directory Index line and move **`index.php`** to be the first file.
+
+*Code used:*
+```
+cd /etc/apache2/mods-enabled/
+sudo cp dir.conf dir.conf.bak
+sudo nano dir.conf
+```
+
+Next I made sure the syntax was accurate with `apachectl configtest`. Then I `reloaded` and `restarted` apache2.
+
+The hardest part was to create *html* text in the file `sudo nano index.php`. (I only made one typing error overall, which really helps with my confidence.)
+
+![HTML PHP](https://github.com/JConley1344/SysLib690/assets/157387139/482be66d-ebbf-4147-805b-50cd2d769dcf)
 
 ## MySQL
