@@ -76,11 +76,12 @@ After getting my new server up an running I was able to go through every set of 
 
 ## MySQL
 
-After following the code found on the installation page (https://cseanburns.github.io/systems-librarianship/4c-installing-configuring-mysql.html) I was able to get everything working the way it was in the video. 
+After following the code found on the installation page (https://cseanburns.github.io/systems-librarianship/4c-installing-configuring-mysql.html) 
+
+I was able to get everything working the way it was in the video. 
 ![690 week 8](https://github.com/JConley1344/SysLib690/assets/157387139/eaca987b-c0f1-4516-ba54-b38fc4d4fd22)
 
 I will say that this week while chaotic for me allowed me to really get a lot of practice on installing and uninstalling software on Linux. 
 
-I will say that this week while chaotic for me allowed me to really get a lot of practice on installing and uninstalling software on Linux. 
 
 
