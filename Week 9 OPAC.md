@@ -4,8 +4,8 @@ After last week's chaotic start I was a bit skiddish to start this week. I am ve
 
 ![coder-everything-is-fine-meme](https://github.com/JConley1344/SysLib690/assets/157387139/058c3053-001e-47b4-9aa1-e7d9238d2734)
 
-##HTML Page
-In `cd /var/ww/html/ I created the file **`mylibrary.html`**. I then added the code to create the basic seach box.
+## HTML Page
+In `cd /var/ww/html/ I created the file` **mylibrary.html**. I then added the code to create the basic seach box.
 
 ```
 <html>
