@@ -133,5 +133,54 @@ echo "<p>Return to search page: <a href='http://35.232.255.82/mylibrary.html'>ht
 ?>
 ```
 
+I then connected to MySQL with `mysql -u opacuser -p`.
+
+I then added the titles at the end. Got an error code and realized I forgot to set the database with `use opacdb:`. Once I got that set I then added 
+
+```
+insert into books
+(author, title, publisher, copyright) values
+('Emma Donoghue', 'Room', 'Little, Brown \& Company', '2010-08-06'),
+('Zadie Smith', 'White Teeth', 'Hamish Hamilton', '2000-01-27');
+```
+I realized these were duplicates because I had added them last week. I then used code `delete from books where author='Emma Donoghue';` and `delete from books where author='Zadie Smith';`.
+
+This removed both files completely from the database. I then used `insert into books
+(author, title, publisher, copyright) values
+('Emma Donoghue', 'Room', 'Little, Brown \& Company', '2010-08-06'),
+('Zadie Smith', 'White Teeth', 'Hamish Hamilton', '2000-01-27');` and added the titles back to the database.
+
+I then grabbed last nights books my son and I read from the shelf and added them.
+
+![OIP](https://github.com/JConley1344/SysLib690/assets/157387139/63777266-f6dd-4304-9489-3e4f9c75fe30)
+
+I had a few issues with syntax. I kept typing things wrong. I got frustrated and walked away from it. My husband suggested I use ***Notepad*** to type everyting in first then copy it to the server.
+It **NEVER** crossed my mind that to help fix typing issues I could type it in notepad and transfer it. **LIFE CHANGING**
+
+**I added 6 books** 
+*Little Blue Truck* by Alice Schertle, *Daddy* by Leslie Patricelli, *Mommy* by Leslie Patricelli, *Hop Hop* by Leslie Patricelli, *All Kinds of Kindness* by Judy Carey Nevin, and *The Rabbit Listned* by Cori Doerrfeld.  
+I did have issues adding more than 2 at a time. So I just went slow.
+
+```
+insert into books (author, title, publisher, copyright) values
+('Leslie Patricelli', 'Mommy', 'Candlewick Press', '2021-03-02'),
+('Leslie Patricelli', 'Daddy', 'Candlewick Press', '2021-03-02');
+```
+```
+insert into books (author, title, publisher, copyright) values
+('Leslie Patricelli', 'Hop Hop', 'Candlewick Press', '2021-03-02'),
+('Cori Doerrfeld', 'The Rabbit Listened', 'Dial Books', '2020-06-30');
+```
+```
+insert into books (author, title, publisher, copyright) values
+(' Judy Carey Nevin', 'All Kinds of Kindness', 'Simon \& Schuster', '2020-06-30'),
+('Alice Schertle', 'Little Blue Truck', 'HarperCollins', '2008-05-01');
+```
+
+
+*I now want to create a database of all 6 bookslves inside the house!* 
+
+Especially the children's books. This way I could search it and see if I owned it when at the bookstore. Sometimes I can't remember. 😆
+
 
 
