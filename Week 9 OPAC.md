@@ -182,5 +182,12 @@ insert into books (author, title, publisher, copyright) values
 
 Especially the children's books. This way I could search it and see if I owned it when at the bookstore. Sometimes I can't remember. 😆
 
+## Images of OPAC and Search
+
+![690 week 9](https://github.com/JConley1344/SysLib690/assets/157387139/a4e04c10-eac9-4c1e-9132-1d794a07f2aa)
+
+
+![690 week 9_2](https://github.com/JConley1344/SysLib690/assets/157387139/e8e0612b-1979-444b-b338-349373872fce)
+
 
 
