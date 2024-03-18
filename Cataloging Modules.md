@@ -96,6 +96,50 @@ Require valid-user
 
 I then double checked the the donfiguration of the ***apache2*** files and got the okay. I restarted appache2 and then checked the status to make sure that that apache2 had restarted.
 
+## Cataloging
+I added an additional 19 titles to the OPAC today. All children's books from my son's collection. ***(See picture)*** I entered 5 in from the cataloging page, just to practice what you did in the video and make sure that mine was working. They did. I then added the additional 14 from the virtual machine. I also searched and confirmed publshing dates for all 19 titles. I used sticky notes to have the dates ready for input. ***(See Picture)***
+
+![20240318_141330](https://github.com/JConley1344/SysLib690/assets/157387139/8530d5fc-85c3-4dab-a5cc-8a22125a2cd2)
+
+![20240318_141402](https://github.com/JConley1344/SysLib690/assets/157387139/1ca051cf-6755-451a-9e6a-ea3aff33b842)
+
+I reviewed the code from two weeks because I did not remember how to get to opacdb.
+I used `mysql -u opacuser -p` to get into MySQL. I then `useopacdb;` to start inserting titles.
+
+I entered titles in sets of 2, because last time that worked best. I also did all my typing in *Notepad* then copy and pasted the code into the virtual machine.
+
+Here is what my coding looked like to be entered into MySQL. 
+
+```
+insert into books (author, title, publisher, copyright) values
+('David LaRochelle', 'See the Ghost', 'Candlewick Press', '2023-07-25'),
+('David LaRochelle', 'See the Dog', 'Candlewick Press', '2021-09-14');
+
+insert into books (author, title, publisher, copyright) values
+('David LaRochelle', 'See the Cat', 'Candlewick Press', '2021-03-30'),
+('Angela DiTerlizzi', 'The Magical Yet', 'Hachette Book Group', '2020-04-21');
+
+insert into books (author, title, publisher, copyright) values
+('Jory John', 'The Couch Potato', 'Harper Collins Publishing', '2020-11-03'),
+('Jory John', 'The Smart Cookie', 'Harper Collins Publishing', '2021-11-02');
+
+insert into books (author, title, publisher, copyright) values
+('Jory John', 'The Sour Grape', 'Harper Collins Publishing', '2022-11-01'),
+('Jory John', 'The Cool Bean', 'Harper Collins Publishing', '2019-12-03');
+
+insert into books (author, title, publisher, copyright) values
+('Jory John', 'As Cool As It Gets', 'Harper Collins Publishing', '2022-09-13'),
+('Anna Llenas', 'The Color Monster A Story About Emotions', 'Little, Brown and Company', '2018-04-19');
+
+insert into books (author, title, publisher, copyright) values
+('Kira Willey', 'Breathe Like a Bear 30 Mindful Moments for Kids to Feel Calm and Focused Anytime, Anywhere', 'Rodale Kids', '2017-12-05'),
+('Kira Willey', 'Breathe Like a Bear First Day of School Worries', 'Rodale Kids', '2023-06-27');
+
+insert into books (author, title, publisher, copyright) values
+('Clare Helen Welsh', 'Sunny Side Up', 'Kane Miller EDC Publishing', '2023-05-11'),
+('Amy June Bates', 'The Big Umbrella', 'Simon & Shuster Publishing', '2018-02-06');
+```
+
 
 
 
