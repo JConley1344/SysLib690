@@ -9,7 +9,7 @@ I logged into my virtual machine. I first ran `sudo apt update`. I had 11 update
 I then created the new directory **cataloging** using the code `sudo mkdir cataloging`. 
 I then created the file `index.html` in **cataloging**.
 
-The file `index.html` contined the following code:
+The file `index.html` contained the following code:
 ```
 <!DOCTYPE html>
 <html>
@@ -83,7 +83,7 @@ echo "<p>Return to the cataloging page: <a href='http://35.232.255.82/cataloging
 ```
 
 ## Security 
-I created the login and password for the cataloging page. I kept *libcat* at the username for the loging. 
+I created the login and password for the cataloging page. I kept *libcat* at the username for the login. 
 
 I also use the code provided to create the **`.htaccess`**.
 
@@ -94,16 +94,16 @@ AuthUserFile /etc/apache2/.htpasswd
 Require valid-user
 ```
 
-I then double checked the the donfiguration of the ***apache2*** files and got the okay. I restarted appache2 and then checked the status to make sure that that apache2 had restarted.
+I then double checked the configuration of the ***apache2*** files and got the okay. I restarted appache2 and then checked the status to make sure that apache2 had restarted.
 
 ## Cataloging
-I added an additional 19 titles to the OPAC today. All children's books from my son's collection. ***(See picture)*** I entered 5 in from the cataloging page, just to practice what you did in the video and make sure that mine was working. They did. I then added the additional 14 from the virtual machine. I also searched and confirmed publshing dates for all 19 titles. I used sticky notes to have the dates ready for input. ***(See Picture)***
+I added an additional 19 titles to the OPAC today. All children's books from my son's collection. ***(See picture)*** I entered 5 in from the cataloging page, just to practice what you did in the video and make sure that mine was working. They did. I then added the additional 14 from the virtual machine. I also searched and confirmed publishing dates for all 19 titles. I used sticky notes to have the dates ready for input. ***(See Picture)***
 
 ![20240318_141330](https://github.com/JConley1344/SysLib690/assets/157387139/8530d5fc-85c3-4dab-a5cc-8a22125a2cd2)
 
 ![20240318_141402](https://github.com/JConley1344/SysLib690/assets/157387139/1ca051cf-6755-451a-9e6a-ea3aff33b842)
 
-I reviewed the code from two weeks because I did not remember how to get to opacdb.
+I reviewed the code from two weeks ago because I did not remember how to get to opacdb.
 I used `mysql -u opacuser -p` to get into MySQL. I then `useopacdb;` to start inserting titles.
 
 I entered titles in sets of 2, because last time that worked best. I also did all my typing in *Notepad* then copy and pasted the code into the virtual machine.
@@ -140,7 +140,7 @@ insert into books (author, title, publisher, copyright) values
 ('Amy June Bates', 'The Big Umbrella', 'Simon & Shuster Publishing', '2018-02-06');
 ```
 
-### Visuals From This Weeks Assignments
+### Visuals From This Week 11 Assignments
 **Updated OPAC (image 1)**
 
 ![690 week 11_1](https://github.com/JConley1344/SysLib690/assets/157387139/0a9c2c3a-caf5-43f0-8783-8e69f84700af)
