@@ -141,19 +141,24 @@ insert into books (author, title, publisher, copyright) values
 ```
 
 ### Visuals From This Weeks Assignments
-Updated OPAC (image 1)
+**Updated OPAC (image 1)**
+
 ![690 week 11_1](https://github.com/JConley1344/SysLib690/assets/157387139/0a9c2c3a-caf5-43f0-8783-8e69f84700af)
 
-Updated OPAC (image 2)
+**Updated OPAC (image 2)**
+
 ![690 week 11_3](https://github.com/JConley1344/SysLib690/assets/157387139/aa711c7c-14ed-46e2-89a6-fc44be0275c8)
 
-PHP Cataloging Page (after password entered)
+**PHP Cataloging Page (after password entered)**
+
 ![690 week 11](https://github.com/JConley1344/SysLib690/assets/157387139/1db3a336-1369-4e2f-8f9e-086c9a520382)
 
-OPAC Search Landing Page
-![690 week 11_4](https://github.com/JConley1344/SysLib690/assets/157387139/2c041aeb-3366-4eb4-bdee-1a612bd7f29a)
+**OPAC Search Landing Page**
 
-OPAC Search Results *Please note that 5 titles returned out of 7 due to date restrictions*.
+![690 week 11_4](https://github.com/JConley1344/SysLib690/assets/157387139/125e826a-6354-43b7-a312-47e3cdfc2356)
+
+**OPAC Search Results *Please note that 5 titles returned out of 7 due to date restrictions*.**
+
 ![690 week 11_5](https://github.com/JConley1344/SysLib690/assets/157387139/68e5bc50-f387-4ad4-a2e3-c3aeda3ed3f5)
 
 
