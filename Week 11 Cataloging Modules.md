@@ -1,12 +1,12 @@
 # Week 11 Cataloging Modules (4.5)
 
-What an interesting week. This week I felt like I finally had a pretty good drip on what was going on.
+What an interesting week. This week I felt like I finally have a pretty good drip on what was going on.
 That said I started by watching the video and then reading through again the instructions. 
 
 ## Creating the HTML Page
 I logged into my virtual machine. I first ran `sudo apt update`. I had 11 updates. I ran `sudo apt upgrade` to update my machine.
 
-I then created the new directory **cataloging** using the code `sudo mkdir cataloging`. 
+I then created the new directory **cataloging** using the code `sudo mkdir cataloging` in `cd /var/www/html/`.
 I then created the file `index.html` in **cataloging**.
 
 The file `index.html` contained the following code:
@@ -42,7 +42,7 @@ The file `index.html` contained the following code:
 ```
 
 ## Creating the PHP Cataloging Page
-Inside the cataloging directory I created the file **insert.php** using `sudp nano insert.php`. I used the following code to create the file.
+Inside the cataloging directory I created the file **insert.php** using `sudo nano insert.php`. I used the following code to create the file.
 
 ```
 <?php
@@ -85,7 +85,7 @@ echo "<p>Return to the cataloging page: <a href='http://35.232.255.82/cataloging
 ## Security 
 I created the login and password for the cataloging page. I kept *libcat* at the username for the login. 
 
-I also use the code provided to create the **`.htaccess`**.
+I also use the code provided to create the **`.htaccess`** file.
 
 ```
 AuthType Basic
@@ -94,7 +94,7 @@ AuthUserFile /etc/apache2/.htpasswd
 Require valid-user
 ```
 
-I then double checked the configuration of the ***apache2*** files and got the okay. I restarted appache2 and then checked the status to make sure that apache2 had restarted.
+I then double checked the configuration of the ***apache2*** files and got the okay. I restarted appache2 and then checked the status to make sure that apache2 had restarted. ***Success***
 
 ### Security Update: 3/19/2024
 
@@ -104,16 +104,16 @@ I found that after I entered my password in it did not prompt me to do so again 
 
 ![690 week 11_6](https://github.com/JConley1344/SysLib690/assets/157387139/153ac792-9d87-422b-a2ad-fbea2c7123a5)
 
-
 ## Cataloging
-I added an additional 19 titles to the OPAC today. All children's books from my son's collection. ***(See picture)*** I entered 5 in from the cataloging page, just to practice what you did in the video and make sure that mine was working. They did. I then added the additional 14 from the virtual machine. I also searched and confirmed publishing dates for all 19 titles. I used sticky notes to have the dates ready for input. ***(See Picture)***
-
+I added an additional 19 titles to the OPAC today. All children's books from my son's personal collection. ***(See picture)*** 
 ![20240318_141330](https://github.com/JConley1344/SysLib690/assets/157387139/8530d5fc-85c3-4dab-a5cc-8a22125a2cd2)
+
+I entered 5 in from the cataloging page, just to practice what you did in the video and make sure that mine was working. It worked perfectly. I then added the additional 14 from the virtual machine in `SQL`. I also searched and confirmed publishing dates for all 19 titles. I used sticky notes to have the dates ready for input. ***(See Picture)***
 
 ![20240318_141402](https://github.com/JConley1344/SysLib690/assets/157387139/1ca051cf-6755-451a-9e6a-ea3aff33b842)
 
 I reviewed the code from two weeks ago because I did not remember how to get to opacdb.
-I used `mysql -u opacuser -p` to get into MySQL. I then `useopacdb;` to start inserting titles.
+I used `mysql -u opacuser -p` to get into MySQL. I then `use opacdb;` to start inserting titles.
 
 I entered titles in sets of 2, because last time that worked best. I also did all my typing in *Notepad* then copy and pasted the code into the virtual machine.
 
@@ -148,6 +148,7 @@ insert into books (author, title, publisher, copyright) values
 ('Clare Helen Welsh', 'Sunny Side Up', 'Kane Miller EDC Publishing', '2023-05-11'),
 ('Amy June Bates', 'The Big Umbrella', 'Simon & Shuster Publishing', '2018-02-06');
 ```
+I then ran the code `select * from books;` to verify that all titles were in the OPAC. I now have 37 total. 
 
 ### Visuals From This Week 11 Assignments
 **Updated OPAC (image 1)**
@@ -157,6 +158,10 @@ insert into books (author, title, publisher, copyright) values
 **Updated OPAC (image 2)**
 
 ![690 week 11_3](https://github.com/JConley1344/SysLib690/assets/157387139/aa711c7c-14ed-46e2-89a6-fc44be0275c8)
+
+**Upadted OPAC from SQL**
+
+![690 week 11_7](https://github.com/JConley1344/SysLib690/assets/157387139/b5a0ab1b-0ed5-4e91-81eb-68ce72b580c7)
 
 **PHP Cataloging Page (after password entered)**
 
