@@ -96,6 +96,15 @@ Require valid-user
 
 I then double checked the configuration of the ***apache2*** files and got the okay. I restarted appache2 and then checked the status to make sure that apache2 had restarted.
 
+### Security Update: 3/19/2024
+
+I found that after I entered my password in it did not prompt me to do so again the rest of the day. This worried me. So I chose not to submit my learnings to the board. 
+
+**Celebration!!** This morning it asked for my secutiry login and password when navigating to the cataloging page. I have not figured out why it did not ask each time yesterday I opened and closed the cataloging page. I did not save the password for autofill. 
+
+![690 week 11_6](https://github.com/JConley1344/SysLib690/assets/157387139/153ac792-9d87-422b-a2ad-fbea2c7123a5)
+
+
 ## Cataloging
 I added an additional 19 titles to the OPAC today. All children's books from my son's collection. ***(See picture)*** I entered 5 in from the cataloging page, just to practice what you did in the video and make sure that mine was working. They did. I then added the additional 14 from the virtual machine. I also searched and confirmed publishing dates for all 19 titles. I used sticky notes to have the dates ready for input. ***(See Picture)***
 
