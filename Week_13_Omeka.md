@@ -32,11 +32,16 @@ messed up and did `sudo app install unzip` and had to figure out why the command
 Omeka zip file installed.
 
 ## Download & Extract
+`ls -l` to review files
 
+sudo mv /var/www/html/omeka-3.1.2 /var/www/html/omeka
 
+cd /var/www/html/omeka
+ls -l
 
+sudo nano db.ini
+edits made to db.ini file
 
-
-## Config
+OMEKA!!!
 
 ## Finishing Installation 
