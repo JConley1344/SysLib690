@@ -66,10 +66,10 @@ I added a couple of books to just see how it would look on the public-facing sid
 
 
 ### Personal Notes
-I had a freakout moment where nothing seemed to work and I was having some connectivity issues on my VM. I found that I had ownership issues. Which was fine because I used `chown` and `chmod` to fix the issue. I found I was not quite understanding what we had been learning.
+I had a freakout moment where nothing seemed to work and I was having some connectivity issues on my VM. I found that I had ownership issues. Which was fine because I used `chown` and `chmod` to fix the issue. I was worried I was not quite understanding what we had been learning. 
 ![week 13 690 3](https://github.com/JConley1344/SysLib690/assets/157387139/22f879da-2e33-4ae0-92c7-41bb5a77b34a)
 
-I woke up and started from scratch. I went back to the VM snapshot from the end of Chapter 3 Library Search. I started from scratch. I found that working through the last 7 weeks again really helped me understand the command line. As I worked through the command line again I saved after each week's subchapter. 
+I went back to the VM snapshot from the end of Chapter 3 Library Search. **I started from scratch.** Scratch as in, working through LAMP Stack, OPAC, Cataloging, Wordpress, Omeka again.  I am much more confident with working the command line. 
 
 Here are the new links on my new VM. I will finish the semester on this machine. 
 
