@@ -78,7 +78,11 @@ Here are the new links on my new VM. I will finish the semester on this machine.
 ![Screenshot 2024-04-05 201306](https://github.com/JConley1344/SysLib690/assets/157387139/00b7e71e-e5e7-4767-a43c-88051f2bc908)
 
 http://35.188.113.90/omeka/
+
 http://35.188.113.90/cataloging/
+
 http://35.188.113.90/opac.php/
+
 http://35.188.113.90/mylibrary.html 
+
 http://35.188.113.90/wordpress/
