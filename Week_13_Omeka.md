@@ -4,16 +4,16 @@
 
 I ran `sudo apt update` and needed to update 40 packages on my virtual machine. 
 I then ran `sudo atp upgrade` to install all 40 packages. 
-I then needed to step away from my machine, so I used `reboot now` to make sure all updates took.
+I then needed to step away from my machine, so I used `reboot now` to make sure all updates were taken.
 
 When I came back to the virtual machine, all packages were up to date. 
 
-I started with doing the prerequist command lines from the systems librarian book. I ran `sudo apt install imagemagick` then ran the line `sudo a2enmod rewrite`. I was then promted to `systemctl restart apache2`, so I ran the line `
-sudo systemctl restart apache2` to restart apache2.  Everything was in place to start installation, downloading, and configuring of Omeka. 
+I started with doing the prerequisite command lines from the systems librarian book. I ran `sudo apt install imagemagick` and then ran the line `sudo a2enmod rewrite`. I was then promoted to `systemctl restart apache2`, so I ran the line `
+sudo systemctl restart apache2` to restart apache2.  Everything was in place to start the installation, downloading, and configuring of Omeka. 
 
 ## Create Database & User
 
-I created a new database called omeka and a new user and password for that database. I made sure to get the commandline correct by transcripbing the code into notepad first to copy and paste. This allowed me to be error free in the execution of these commands. 
+I created a new database called Omeka and a new user and password for that database. I made sure to get the command line correct by transcribing the code into Notepad first to copy and paste. This allowed me to be error-free in the execution of these commands. 
 
 `create user 'omeka'@'localhost' identified by 'XXXXXXX';`
 `create database omeka;`
@@ -29,10 +29,10 @@ I felt very confident at this point in the process. However, that soon changed.
 I got back into `cd var/www/html`.
 
 I then used `wget` to download the zip file to my server. That looked like this `sudo wget https://github.com/omeka/Omeka/releases/download/v3.1.2/omeka-3.1.2.zip`.
-I did mess up and used `sudo app install unzip` and had to figure out why the command was not found. Once I realized that I had used 'app' intstead of 'apt' I on track again.
+I messed up and used `sudo app install unzip` and had to figure out why the command was not found. Once I realized that I had used 'app' instead of 'apt' I was on track again.
 (`sudo apt install unzip`)
 
-Here is where an issue started. I was unable get the zip file to unzip. I kept getting the `checkdir error`. I of course tried to fix the issue on my own and ended getting confused as I looked for solutions online. 
+Here is where an issue started. I was unable to get the zip file to unzip. I kept getting the `checkdir error`. I of course tried to fix the issue on my own and ended up getting confused as I looked for solutions online. 
 
 ![Screenshot 2024-04-04 214259](https://github.com/JConley1344/SysLib690/assets/157387139/87022937-6fe5-49c2-bfd4-736bc52538e1)
 
@@ -49,7 +49,7 @@ I then checked the files using `ls -l`.
 
 I moved the omeka-3.1.2 file to omeka using `sudo mv /var/www/html/omeka-3.1.2 /var/www/html/omeka`.
 
-I then went into *omeka* using `cd /var/www/html/omeka`, looked for the file `db.ini` and used `nano` to edit it.
+I then went into *omeka* using `cd /var/www/html/omeka`, looked for the file `db.ini`, and used `nano` to edit it.
 
 **OMEKA Installation Success!!!**
 
@@ -60,9 +60,25 @@ I then went into *omeka* using `cd /var/www/html/omeka`, looked for the file `db
 
 ![Screenshot 2024-04-05 143722](https://github.com/JConley1344/SysLib690/assets/157387139/963cd726-1416-467a-a3b3-81f4d0e662d3)
 
-I added a couple of books to just see how it would look on the public facing side. I have only ever used Omeka once in 602. However, after looking through it I was thinking that maybe what I created for my practicum in Fall 2023. I used the program *LiveBinder*. I believe *Omeka* might be a better option. I am debating on trying it out. 
+I added a couple of books to just see how it would look on the public-facing side. I have only ever used Omeka once in 602. However, after looking through it I was thinking that maybe what I created for my practicum in Fall 2023. I used the program *LiveBinder*. I believe *Omeka* might be a better option. I am debating on trying it out. 
 
 ![Screenshot 2024-04-05 174621](https://github.com/JConley1344/SysLib690/assets/157387139/a43184a4-71ab-484c-a431-224de24acd99)
 
 
 ### Personal Notes
+I had a freakout moment where nothing seemed to work and I was having some connectivity issues on my VM. I found that I had ownership issues. Which was fine because I used `chown` and `chmod` to fix the issue. I found I was not quite understanding what we had been learning.
+![week 13 690 3](https://github.com/JConley1344/SysLib690/assets/157387139/22f879da-2e33-4ae0-92c7-41bb5a77b34a)
+
+I woke up and started from scratch. I went back to the VM snapshot from the end of Chapter 3 Library Search. I started from scratch. I found that working through the last 7 weeks again really helped me understand the command line. As I worked through the command line again I saved after each week's subchapter. 
+
+Here are the new links on my new VM. I will finish the semester on this machine. 
+
+![Screenshot 2024-04-05 201230](https://github.com/JConley1344/SysLib690/assets/157387139/5eeb4b69-a06b-47a7-8316-0426c2633a00)
+
+![Screenshot 2024-04-05 201306](https://github.com/JConley1344/SysLib690/assets/157387139/00b7e71e-e5e7-4767-a43c-88051f2bc908)
+
+http://35.188.113.90/omeka/
+http://35.188.113.90/cataloging/
+http://35.188.113.90/opac.php/
+http://35.188.113.90/mylibrary.html 
+http://35.188.113.90/wordpress/
