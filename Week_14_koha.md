@@ -27,7 +27,7 @@ I logged in as the root user `sudo su`.
 ## Added Koha repository
 `echo 'deb http://debian.koha-community.org/koha stable main' | sudo tee /etc/apt/sources.list.d/koha.list`
 
-Then added teh digital signature
+Then added the digital signature
 `wget -q -O- https://debian.koha-community.org/koha/gpg.asc | sudo apt-key add -`
 
 ## Install Koha
