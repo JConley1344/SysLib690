@@ -79,4 +79,4 @@ Patron Iinterface
 ![Screenshot 2024-04-12 102018](https://github.com/JConley1344/SysLib690/assets/157387139/809bed34-fb1a-4849-a25f-9aa13ad517f8)
 
 
-I found that documentation is very important.
+I found that documentation is very important. Also I woke up Friday and created a new instance and did all the steps again to see if I could recreate everything. I could. I think this is a great way for me to learn, is just to do it again and again. 
